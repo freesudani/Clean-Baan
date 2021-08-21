@@ -5,7 +5,7 @@ import "./Button.css";
 const Button = () => {
   return (
     <Link to="book">
-      <button className="btn">Book With Us</button>
+      <button className="btn">Book A Service</button>
     </Link>
   );
 };
