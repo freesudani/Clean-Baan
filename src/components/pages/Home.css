@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  height: 90vh;
+  height: 85vh;
   align-items: center;
   justify-content: space-around;
   color: #000;
@@ -12,7 +12,7 @@
 }
 
 .home-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #1888ff;
   text-transform: uppercase;

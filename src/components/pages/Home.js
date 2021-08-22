@@ -5,7 +5,7 @@ import Button from "../Button";
 import { motion } from "framer-motion";
 
 const TextVariance = {
-  hidde: {
+  hidden: {
     x: "-20vw",
     opacity: 0,
   },
@@ -21,7 +21,7 @@ const TextVariance = {
 };
 
 const ImageVariance = {
-  hidde: {
+  hidden: {
     X: "20vw",
     opacity: 0,
   },

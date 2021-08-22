@@ -5,20 +5,12 @@
   font-family: "PT Sans", sans-serif;
 }
 
-.home .book .products .services .special {
+.book .products .special {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-}
-
-.home {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
 }
 
 .book {
@@ -30,14 +22,6 @@
 }
 
 .products {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.services {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
