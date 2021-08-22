@@ -14,4 +14,9 @@ export const MenuItems = [
     path: "/officecleaning",
     cName: "dropdown-link",
   },
+  {
+    title: "Swimming Pool Cleaning",
+    path: "/swimmingpoolcleaning",
+    cName: "dropdown-link",
+  },
 ];
