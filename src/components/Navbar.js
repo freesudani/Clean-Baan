@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./Button";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
@@ -7,7 +7,7 @@ import DropdownThree from "./DropdownThree";
 import { Link } from "react-router-dom";
 import LogoImage from "../images/b5a114ef30884166a3739f721b742141.png";
 
-const Navbar = () => {
+const Navbar = ({ setShowModal }) => {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdownTwo, setDropdownTwo] = useState(false);
@@ -128,7 +128,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Button />
+        <Button setShowModal={setShowModal} />
       </nav>
     </>
   );

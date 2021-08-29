@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -7,12 +8,15 @@ import Products from "./components/pages/Products";
 import Services from "./components/pages/Services";
 import Special from "./components/pages/Special";
 import { AnimatePresence } from "framer-motion";
+import Booking from "./components/Booking";
 
 function App() {
   const location = useLocation();
+  const [showModal, setShowModal] = useState(false);
   return (
-    <>
-      <Navbar />
+    <AnimatePresence exitBeforeEnter onExitComplete={() => setShowModal(false)}>
+      <Navbar setShowModal={setShowModal} />
+      <Booking showModal={showModal} setShowModal={setShowModal} />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={Home} />
@@ -22,7 +26,7 @@ function App() {
           <Route path="/special" exact component={Special} />
         </Switch>
       </AnimatePresence>
-    </>
+    </AnimatePresence>
   );
 }
 
