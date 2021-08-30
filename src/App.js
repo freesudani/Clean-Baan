@@ -9,6 +9,7 @@ import Services from "./components/pages/Services";
 import Special from "./components/pages/Special";
 import { AnimatePresence } from "framer-motion";
 import Booking from "./components/Booking";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/special" exact component={Special} />
         </Switch>
       </AnimatePresence>
+      <Footer />
     </AnimatePresence>
   );
 }

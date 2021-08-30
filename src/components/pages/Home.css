@@ -21,6 +21,8 @@
 .home-paragraph {
   font-size: 1.1rem;
   text-align: justify;
+  line-height: 2;
+  margin-bottom: 1.8rem;
 }
 
 .home-picture {
